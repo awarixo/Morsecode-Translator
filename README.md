@@ -5,6 +5,7 @@ For user inputs, we have one push button we use to enter the dots(‘.’), and 
 Finally, we attached a third LED to act as an indicator for the user to start button input and a LCD unit to display the result of the corresponding user input.
 
 Project Requirements:
+
 i.	Write a program that is able to translate the dots and dashes entered (using International Morse Code) and display the message on the LCD. 
 
 ii.	Your program should also be able to handle gaps during signalling for intra character, between letters and between words.
@@ -18,8 +19,7 @@ Design Process
 
 Accepting user button inputs
 	This was the first task we had to complete before our program could operate properly. During the course of our study on Morse code, we observed that all characters (A-Z & 0-9) had a maximum of 5 inputs. This meant that for our inputs we had to create a loop to run 5 times then end. 
- 
-	We made our button inputs light up their LEDs and store the numbers ‘1’ & ‘2’ in our array to represent dots (‘.’) and dashes (‘-‘) respectively. If no button was pressed, ‘0’ is saved into our array. Also, during assembly of our circuit, we decided to implement a pull-up resistor for our buttons, so our button state is normally at logic 1 and logic 0 when pressed.
+ 	We made our button inputs light up their LEDs and store the numbers ‘1’ & ‘2’ in our array to represent dots (‘.’) and dashes (‘-‘) respectively. If no button was pressed, ‘0’ is saved into our array. Also, during assembly of our circuit, we decided to implement a pull-up resistor for our buttons, so our button state is normally at logic 1 and logic 0 when pressed.
 	We made the third LED indicate when it was time for button inputs and when the counter variable condition was met, at this point the loop would have run 5 times and all opportunity for user input is over.
 
 Storing user inputs and concatenation
